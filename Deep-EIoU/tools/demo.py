@@ -80,7 +80,7 @@ def make_parser():
     )
     # tracking args
     parser.add_argument("--track_high_thresh", type=float, default=0.6, help="tracking confidence threshold")
-    parser.add_argument("--track_low_thresh", default=0.1, type=float, help="lowest detection threshold valid for tracks")
+    parser.add_argument("--track_low_thresh", default=0.6, type=float, help="lowest detection threshold valid for tracks")
     parser.add_argument("--new_track_thresh", default=0.7, type=float, help="new track thresh")
     parser.add_argument("--track_buffer", type=int, default=60, help="the frames for keep lost tracks")
     parser.add_argument("--match_thresh", type=float, default=0.8, help="matching threshold for tracking")
